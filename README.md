@@ -1,1 +1,1 @@
-# news.github.io
+https://punya99.github.io/news.github.io/
