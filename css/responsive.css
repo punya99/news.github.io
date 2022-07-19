@@ -1,0 +1,516 @@
+@media screen and (max-width:992px) {
+
+    
+
+   
+
+
+
+    .pubbximg img {
+        padding: 10px;
+        height: 200px;
+    }
+    #cssmenu>ul>li:hover>a:after {
+        display: none;
+    }
+    .top-right {
+        margin-bottom: 0;
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .langbtn {
+        display: inline-block;
+        margin-top: 0;
+        vertical-align: middle;
+        float: none;
+    }
+    #cssmenu ul {
+        width: 100%;
+    }
+    #cssmenu ul li {
+        display: block;
+        border-top: 1px solid rgba(68, 68, 68, 0.13);
+    }
+    #cssmenu li:hover>ul {
+        display: none;
+    }
+    .overlayformobilemenu {
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        background: rgb(0 0 0 / 0.3);
+        height: 100%;
+    }
+    .top-menu {
+        text-align: left;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+        width: 280px;
+        background: #fff;
+        left: -280px;
+        top: 0;
+        z-index: 50;
+        transition: all 0.3s;
+    }
+    #cssmenu {
+        text-align: left;
+    }
+    .menuclosebtn {
+        position: absolute;
+        right: 16px;
+        top: 12px;
+    }
+    .mobilemenulogo img {
+        height: 50px;
+    }
+    .topmenuopen {
+        left: 0px;
+        transition: all 0.3s;
+    }
+    #cssmenu ul ul li,
+    #cssmenu li:hover>ul>li {
+        height: auto
+    }
+    #cssmenu>ul>li>a {
+        padding: 10px 15px;
+        font-weight: 400;
+    }
+    #cssmenu>ul ul li a {
+        padding: 8px 15px;
+        font-weight: 400;
+    }
+    #cssmenu ul ul li {
+        position: relative;
+        border-bottom: none;
+        border-top: 1px solid rgba(68, 68, 68, 0.13);
+    }
+    #cssmenu>ul>li:hover {
+        background: transparent;
+    }
+    #cssmenu ul ul ul li a {
+        padding-left: 25px
+    }
+    #cssmenu ul ul,
+    #cssmenu ul ul ul {
+        position: static;
+        width: 100%;
+        box-shadow: 0 0 0;
+        background: transparent;
+    }
+    #cssmenu>ul>li.has-sub>a:after,
+    #cssmenu>ul>li.has-sub>a:before,
+    #cssmenu ul ul>li.has-sub>a:after,
+    #cssmenu ul ul>li.has-sub>a:before {
+        display: none
+    }
+    #cssmenu #head-mobile {
+        display: block;
+        padding: 23px;
+        color: #ddd;
+        font-size: 12px;
+        font-weight: 700
+    }
+    .button {
+        width: 50px;
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        margin: 20px 0px;
+    }
+    /* .searchbox {
+        margin: 0px 0 15px;
+    } */
+    .button:after {
+        position: absolute;
+        top: 19px;
+        display: block;
+        height: 8px;
+        width: 20px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        content: '';
+    }
+    .button:before {
+        -webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+        position: absolute;
+        top: 13px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #000;
+        content: '';
+    }
+    .button.menu-opened:after {
+        -webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+        top: 20px;
+        border: 0;
+        height: 2px;
+        width: 19px;
+        background: #000;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    .button.menu-opened:before {
+        top: 20px;
+        background: #000;
+        width: 19px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    #cssmenu .submenu-button {
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 0;
+        display: block;
+        border-left: 1px solid rgba(68, 68, 68, 0.13);
+        height: 42px;
+        width: 46px;
+        cursor: pointer;
+    }
+    #cssmenu ul ul ul {
+        margin-left: 0;
+    }
+    #cssmenu .submenu-button.submenu-opened {
+        background: #262626
+    }
+    #cssmenu ul ul .submenu-button {
+        height: 36px;
+        width: 34px
+    }
+    #cssmenu .submenu-button:after {
+        position: absolute;
+        top: 22px;
+        right: 19px;
+        width: 8px;
+        height: 2px;
+        display: block;
+        background: #ddd;
+        content: ''
+    }
+    #cssmenu ul ul .submenu-button:after {
+        top: 15px;
+        right: 13px
+    }
+    #cssmenu .submenu-button.submenu-opened:after {
+        background: #ddd
+    }
+    #cssmenu .submenu-button:before {
+        position: absolute;
+        top: 19px;
+        right: 22px;
+        display: block;
+        width: 2px;
+        height: 8px;
+        background: #ddd;
+        content: ''
+    }
+    #cssmenu ul ul .submenu-button:before {
+        top: 12px;
+        right: 16px
+    }
+    #cssmenu .submenu-button.submenu-opened:before {
+        display: none
+    }
+    #cssmenu ul ul ul li.active a {
+        border-left: none
+    }
+    #cssmenu>ul>li.has-sub>ul>li.active>a,
+    #cssmenu>ul ul>li.has-sub>ul>li.active>a {
+        border-top: none
+    }
+    .blogsec:before,
+    .blogsec:after {
+        display: none;
+    }
+    .footrow .col-md-3 {
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    .poupupmainbx button.close {
+        right: 0;
+        color: #000;
+        font-size: 25px;
+        top: 0;
+        z-index: 20;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+   
+
+   
+
+    .pubbximg img {
+        height: 300px;
+    }
+    #filtermainbox {
+        display: none;
+    }
+    .sortbylist li {
+        margin-right: 10px;
+    }
+    .sortbylist ul {
+        white-space: nowrap;
+        overflow: auto;
+        overflow-y: hidden;
+    }
+    .productdetailtabs .nav-tabs .nav-item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .productdetailtabs .nav-tabs {
+        white-space: nowrap;
+        overflow: auto;
+        overflow-y: hidden;
+        display: block;
+    }
+    .topinner h3 {
+        font-size: 30px;
+    }
+    .footrow .col-md-3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .newssidesocial {
+        float: none;
+        margin: 20px 0 0;
+        text-align: center;
+    }
+    .vaidyadata {
+        padding: 0 0 30px;
+    }
+    .vaidyasec {
+        padding: 30px 0;
+    }
+    .dealsofbox {
+        padding: 0 0 30px;
+    }
+    .navarrows .owl-nav button.owl-prev {
+        left: 0px;
+        font-size: 20px;
+    }
+    .navarrows .owl-nav button.owl-next {
+        right: 0px;
+        font-size: 20px;
+    }
+    .logo img {
+        height: 55px;
+    }
+    .top-right>ul>li>a {
+        padding: 0px 7px;
+    }
+    .langbtn a {
+        padding: 1px 10px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .pubbximg img {
+        height: 280px;
+    }
+    .bigheading {
+        font-size: 30px;
+    }
+    .exportformbox {
+        padding: 20px;
+    }
+    .exform {
+        margin-top: 30px;
+    }
+    .exform label {
+        text-align: left;
+    }
+    .consulbox {
+        padding: 20px;
+    }
+    .consulbox h3 {
+        font-weight: 400;
+        margin: 0 0 20px;
+        font-size: 20px;
+    }
+    .consulbox img {
+        height: 150px;
+        margin: 0 auto 20px;
+    }
+    .historysection h4 {
+        font-size: 30px;
+    }
+    .hisboxmain {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .hisboxmain span {
+        display: none;
+    }
+    .historylist:after {
+        display: none;
+    }
+    .historylist .hisboxmain:nth-child(even) {
+        margin-top: 0;
+    }
+    .hisboxmain p {
+        min-height: auto;
+        font-size: 14px;
+    }
+    .fouderimgmain img {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    .leadersection {
+        background-image: none !important;
+    }
+    .detailslider {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .slider-thumbs-box {
+        float: none;
+        width: 100%;
+    }
+    #slider-thumbs ol li {
+        width: 19%;
+        height: auto;
+        margin-bottom: 0;
+        float: left;
+    }
+    #slider-thumbs ol li img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    #productdetail {
+        margin-bottom: 20px;
+    }
+    .product-name-detail {
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    .detailprice {
+        font-size: 18px;
+    }
+    .productdetaildata p {
+        margin-bottom: 15px;
+    }
+    .addrowbtn {
+        float: left;
+        margin-right: 0;
+        width: 50%;
+        padding: 5px;
+    }
+    .quentitiydrop {
+        width: 100%;
+    }
+    .topinner h3 {
+        font-size: 25px;
+    }
+    .addtocart-btn {
+        width: 100%;
+    }
+    .enterpinside {
+        display: block;
+    }
+    .enterpinside input[type="text"] {
+        width: 70%;
+    }
+    .topstrip {
+        min-height: 150px;
+    }
+    .logindropbox {
+        right: auto;
+        left: 0;
+        text-align: left;
+    }
+    .footlistbox h4 {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .footlist li a {
+        font-size: 12px;
+    }
+    .proboxdata .proname {
+        font-size: 15px;
+        margin: 0 0 5px;
+    }
+    .proboxdata {
+        padding: 10px;
+    }
+    .proboxdata p {
+        font-size: 14px;
+        margin: 0 0 5px;
+    }
+    .logo {
+        float: left;
+    }
+    .header-right {
+        float: none;
+        text-align: center;
+    }
+    .offtagbox {
+        margin-right: 0px;
+        float: right;
+        margin: 10px 0;
+    }
+    .top-right>ul>li>a {
+        padding: 0px 20px;
+    }
+    .top-right {
+        margin-right: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width:480px) {
+    .pubbximg img {
+        height: 200px;
+    }
+    .container-fluid p {
+        text-align: center;
+    }
+
+    .container-fluid .logo img {
+        text-align: center;
+    }
+
+
+    .searchbox {
+        text-align: center;
+    }
+    .aboutsec {
+        position: relative;
+        background-image: url(../images/abtbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+       
+        margin-bottom: 60px;
+    }
+}
